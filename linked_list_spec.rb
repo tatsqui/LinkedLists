@@ -21,7 +21,7 @@ describe LinkedList do
     end
   end
 
-  xdescribe 'add_first & get_first' do
+  describe 'add_first & get_first' do
     it 'can add values to an empty list' do
       # Act
         @list.add_first(3)
