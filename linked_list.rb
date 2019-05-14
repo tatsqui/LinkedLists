@@ -63,7 +63,13 @@ class LinkedList
   end
 
   def get_at_index(index)
-
+    return nil if length < index
+    
+    node = @head
+    index.times do 
+      node = node.next
+    end
+    return node.data
   end
 
 end
